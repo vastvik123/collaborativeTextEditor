@@ -1,3 +1,1 @@
-"# textEditor" 
-"# distributedTextEditor" 
 "# distributedTextEditor" 
