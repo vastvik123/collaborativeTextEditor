@@ -13,7 +13,7 @@ public class Client {
     
     Client(){
         try{
-            socket = IO.socket("http://localhost:3000");
+            socket = IO.socket("https://shared-text-editor.herokuapp.com/");
             socket.connect();
             System.out.println("connected to server!");
             
@@ -100,6 +100,7 @@ public class Client {
     }
     
     public void sendStrings(){
+        System.out.println("Asked server for allStrings!");
         socket.emit("sendStrings", "");
     }
     
